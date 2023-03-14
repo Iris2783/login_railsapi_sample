@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_railsapi_sample/next/nextpage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -45,15 +44,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(height: 20),
-              ElevatedButton(//ボタン作成
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const NextPage(),//NextPageに遷移するように設定
-                    ),
-                  );
-                },
+              ElevatedButton(
+                //ボタン作成
+                onPressed: () {},
                 child: const Text('Login'),
               ),
             ],
